@@ -7,12 +7,12 @@ def print_grades(grades):
 def grades_sum(grades):
     total = 0
     for grade in grades: 
-        total += float(grade)
+        total += grade
     return total
     
 def grades_average(grades):
     sum_of_grades = grades_sum(grades)
-    average = sum_of_grades / len(grades)
+    average = sum_of_grades / float(len(grades))
     return average
 
 def grades_variance(scores):
@@ -29,3 +29,7 @@ def grades_std_deviation(variance):
     
 variance = grades_variance(grades)
 print grades_std_deviation(variance)
+print_grades(grades)
+print grades_sum(grades)
+print grades_average(grades)
+
